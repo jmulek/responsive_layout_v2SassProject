@@ -1,0 +1,215 @@
+/*********************************
+        MAIN STYLES
+*********************************/
+* {
+  box-sizing: border-box;
+  margin-top: 0; }
+
+body {
+  background: #fafafa;
+  font-family: "Arvo", serif;
+  font-size: 17px;
+  width: 1300px;
+  max-width: 90%; }
+  @media (min-width: 768px) {
+    body {
+      max-width: 95%; } }
+
+h2 {
+  margin-bottom: 25px;
+  margin-top: 25px;
+  font-weight: bold; }
+
+h3 {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-transform: capitalize; }
+
+p {
+  padding-bottom: 20px;
+  max-width: 90%; }
+
+a {
+  text-decoration: none; }
+  a:visited, a:link {
+    color: black; }
+  a:hover {
+    color: #277cf2; }
+
+/***** Clearfix *****/
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both; }
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  font-family: "Bitter", serif; }
+  @media (min-width: 1024px) {
+    .main-nav {
+      display: inline;
+      height: 100px;
+      margin: 0 auto; } }
+  @media (min-width: 1024px) {
+    .main-nav li {
+      margin: 10px;
+      text-align: right; } }
+
+.main-nav ul a {
+  font-weight: bold;
+  display: block; }
+
+.index-nav {
+  padding-left: 0px; }
+  @media (min-width: 768px) {
+    .index-nav {
+      display: flex;
+      justify-content: center; } }
+  @media (min-width: 1024px) {
+    .index-nav {
+      float: right;
+      padding-top: 25px;
+      padding-right: 25px; } }
+  .index-nav li {
+    list-style: none;
+    text-transform: capitalize;
+    padding: 12px 25px;
+    margin: 5px 25px;
+    background-color: #EDEBEB; }
+    @media (min-width: 768px) {
+      .index-nav li {
+        background-color: #fafafa; } }
+
+@media (min-width: 768px) {
+  .student-name {
+    padding-top: 25px; } }
+@media (min-width: 1024px) {
+  .student-name {
+    margin: 0 auto;
+    float: left;
+    padding-left: 50px; } }
+
+.profile-pic {
+  max-width: 50%;
+  display: block;
+  border-radius: 30%; }
+  @media (min-width: 768px) {
+    .profile-pic {
+      float: right;
+      margin-right: 50px;
+      height: 225px;
+      width: 225px; } }
+  @media (min-width: 1024px) {
+    .profile-pic {
+      width: 250px;
+      height: 250px; } }
+
+#portfolio {
+  padding-top: 25px; }
+
+@media (min-width: 768px) {
+  .intro {
+    width: 95%;
+    margin: auto; } }
+@media (min-width: 1024px) {
+  .intro {
+    text-align: left; } }
+
+.intro p {
+  padding: 0 1em;
+  color: black;
+  padding: 15px 50px; }
+  @media (min-width: 768px) {
+    .intro p {
+      margin: 20px 0;
+      font-size: 1.2em;
+      padding: 0 15px;
+      max-width: 50%; } }
+  @media (min-width: 1024px) {
+    .intro p {
+      text-align: left;
+      width: 100%;
+      max-width: 40%;
+      font-size: 22px; } }
+
+.container {
+  max-width: 90%;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .container {
+      width: 40%; } }
+  @media (min-width: 1024px) {
+    .container {
+      width: 33.333333%; } }
+
+@media (min-width: 768px) {
+  .content {
+    display: flex;
+    order: 1;
+    flex-wrap: wrap; } }
+
+.wrapper {
+  max-width: 100%;
+  background-color: #fafafa; }
+  @media (min-width: 768px) {
+    .wrapper {
+      width: 95%; } }
+
+.container-img {
+  width: 95%; }
+
+#contact {
+  color: black;
+  padding-bottom: 45px;
+  padding-top: 35px; }
+
+#contact p {
+  max-width: 65%;
+  line-height: 35px; }
+  @media (min-width: 768px) {
+    #contact p {
+      max-width: 50%; } }
+
+.backtotop {
+  float: right; }
+  @media (min-width: 768px) {
+    .backtotop {
+      display: none; } }
+
+.bottom-nav {
+  display: none; }
+  @media (min-width: 768px) {
+    .bottom-nav {
+      display: flex;
+      flex-direction: row;
+      list-style: none; } }
+  @media (min-width: 768px) {
+    .bottom-nav li {
+      padding: 0 5px;
+      text-transform: capitalize;
+      font-weight: bold; } }
+
+.main-footer {
+  width: 90%;
+  margin: auto;
+  padding: 1em 0;
+  border-top: 1px solid darkgrey; }
+  @media (min-width: 768px) {
+    .main-footer {
+      display: flex;
+      justify-content: space-between; } }
+
+.main-footer span {
+  font-weight: bold; }
+
+.bottom {
+  padding-bottom: 35px; }
+
+.intro p, .wrapper, #contact {
+  text-align: center; }
+
+body, p, .profile-pic, .wrapper, #contact p {
+  margin: 0 auto; }

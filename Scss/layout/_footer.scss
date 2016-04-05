@@ -1,0 +1,58 @@
+#contact {
+    color: $fontcolor;
+    padding-bottom: 45px;
+    padding-top: 35px;
+    @extend %center;
+}
+#contact p {
+  max-width: 65%;
+  @extend %margin;
+  line-height: 35px;
+      @include tablet {
+          @extend %center;
+          max-width: 50%;
+      }
+}
+
+
+.backtotop {
+    float: right;
+        @include tablet {
+            display: none;
+        }
+}
+
+.bottom-nav {
+    display: none;
+        @include tablet {
+            display: flex;
+            flex-direction: row;
+            list-style: none;
+        }
+            li {
+                @include tablet {
+                    padding: 0 5px;
+                    text-transform: capitalize;
+                    font-weight: $font-weight;
+                }
+            }
+}
+
+.main-footer {
+    width: 90%;
+    margin: auto;
+    padding: 1em 0;
+    border-top: 1px solid darkgrey;
+        @include tablet {
+            display: flex;
+            justify-content: space-between;
+        }
+}
+
+.main-footer span {
+    font-weight: $font-weight;
+}
+
+.bottom {
+    padding-bottom: 35px;
+}

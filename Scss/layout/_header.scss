@@ -1,0 +1,59 @@
+.main-nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    font-family: $bitter;
+        @include desktop {
+            display: inline;
+            height: 100px;
+            margin:  0 auto;
+        }
+            li {
+                @include desktop {
+                    margin: 10px;
+                    text-align: right;
+                    }
+                }
+}
+
+
+.main-nav ul a {
+    font-weight: $font-weight;
+    display: block;
+
+}
+.index-nav {
+    padding-left: 0px;
+        @include tablet {
+            display: flex;
+            justify-content: center;
+    }
+        @include desktop {
+            float: right;
+            padding-top: 25px;
+            padding-right: 25px;
+        }
+            li {
+                list-style: none;
+                text-transform: capitalize;
+                padding:12px 25px;
+                margin: 5px 25px;
+                background-color: #EDEBEB;
+                    @include tablet {
+                        background-color: $bg;
+            }
+        }
+}
+
+
+.student-name {
+    @include tablet {
+        padding-top: 25px;
+    }
+    @include desktop {
+        margin: 0 auto;
+        float: left;
+        padding-left: 50px;
+    }
+}

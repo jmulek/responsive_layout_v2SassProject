@@ -1,0 +1,86 @@
+.profile-pic {
+    max-width: 50%;
+    display: block;
+    @extend %margin;
+    border-radius: 30%;
+        @include tablet {
+        float: right;
+        margin-right: 50px;
+        height: 225px;
+        width: 225px;
+    }
+        @include desktop {
+            width:250px;
+            height:250px;
+        }
+
+
+}
+#portfolio{
+  padding-top: 25px;
+
+}
+.intro {
+    @include tablet {
+        width: 95%;
+        margin: auto;
+    }
+    @include desktop {
+          text-align: left;
+    }
+}
+
+.intro p {
+    @extend %center;
+    padding: 0 1em;
+    color: $fontcolor;
+    padding: 15px 50px;
+        @include tablet {
+            margin: 20px 0;
+            font-size: 1.2em;
+            padding: 0 15px;
+            max-width: 50%;
+    }
+        @include desktop {
+            text-align: left;
+            width:100%;
+            max-width: 40%;
+            font-size: 22px;
+        }
+
+
+}
+.container{
+  max-width: 90%;
+  margin: 0 auto;
+      @include tablet {
+          width: 40%;
+          @extend %margin;
+
+      }
+      @include desktop {
+          width: 33.333333%;
+      }
+
+}
+.content {
+    @include tablet {
+        display: flex;
+        order: 1;
+        flex-wrap: wrap;
+    }
+}
+
+.wrapper {
+    max-width: 100%;
+    @extend %margin;
+    @extend %center;
+    background-color: $bg;
+        @include tablet {
+            width: 95%;
+        }
+}
+
+.container-img {
+    width: 95%;
+}

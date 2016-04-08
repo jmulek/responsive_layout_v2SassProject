@@ -11,7 +11,7 @@
 body {
     background: $bg;
     font-family: $arvo;
-    font-size: 17px;
+    font-size: $font-size;
     width: 1300px;
     max-width: 90%;
     @extend %margin;
@@ -50,15 +50,13 @@ p {
 
 a {
     text-decoration: none;
-
-
-    &:visited,
-    &:link {
-        color: $fontcolor;
+        &:visited,
+        &:link {
+            color: $fontcolor;
+        }
+        &:hover {
+          color: $hover;
     }
-    &:hover {
-      color: $hover;
-}
 }
 
 /***** Clearfix *****/

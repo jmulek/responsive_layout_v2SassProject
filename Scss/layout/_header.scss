@@ -39,7 +39,7 @@
                 text-transform: capitalize;
                 padding:12px 25px;
                 margin: 5px 25px;
-                background-color: #EDEBEB;
+                background-color: $licolor;
                     @include tablet {
                         background-color: $bg;
             }

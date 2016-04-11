@@ -8,7 +8,7 @@
 body {
   background: #fafafa;
   font-family: "Arvo", serif;
-  font-size: 17px;
+  font-size: 1.2em;
   width: 1300px;
   max-width: 90%; }
   @media (min-width: 768px) {
@@ -78,7 +78,7 @@ a {
     text-transform: capitalize;
     padding: 12px 25px;
     margin: 5px 25px;
-    background-color: #EDEBEB; }
+    background-color: #edebeb; }
     @media (min-width: 768px) {
       .index-nav li {
         background-color: #fafafa; } }
@@ -133,7 +133,7 @@ a {
       text-align: left;
       width: 100%;
       max-width: 40%;
-      font-size: 22px; } }
+      font-size: 1.2em; } }
 
 .container {
   max-width: 90%;
